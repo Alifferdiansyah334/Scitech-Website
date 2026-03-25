@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Scitech Academy Web
 
-## Getting Started
+Website profil Scitech Academy berbasis Next.js untuk menampilkan program belajar, kerja sama sekolah, portofolio karya, profil tim, testimoni, dan galeri pencapaian dalam tampilan modern.
 
-First, run the development server:
+## Highlights
+
+- Landing page dengan section hero, statistik, program, partnership, FAQ, CTA, dan footer.
+- Halaman profil untuk founder, mentor, visi, misi, dan nilai Scitech.
+- Halaman galeri untuk prestasi, karya siswa, kegiatan, dan portofolio lomba.
+- UI interaktif dengan reveal animation, tilt card, masonry gallery, dan mouse glow.
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- GSAP
+- Lucide React
+
+## Menjalankan Secara Lokal
+
+```bash
+npm install
+npm run dev
+```
+
+Buka `http://localhost:3000` setelah server berjalan.
+
+## Scripts
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Struktur Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+src/
+  app/
+    page.tsx
+    profile/page.tsx
+    gallery/page.tsx
+  components/
+public/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Aset Privat
 
-## Learn More
+Foto mentor atau founder yang memakai nama orang tidak ikut dikomit ke repository.
 
-To learn more about Next.js, take a look at the following resources:
+- Simpan aset privat lokal di `src/app/assets/private-mentors/` bila diperlukan.
+- File aset bernama orang sudah masuk `.gitignore`.
+- Komponen profil sudah memakai aset aman agar repo tetap bisa di-push ke GitHub tanpa foto personal.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Project ini bisa dideploy ke Vercel atau platform lain yang mendukung Next.js.
 
-## Deploy on Vercel
+## Push ke GitHub
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Jika repo GitHub Anda sudah dibuat, gunakan perintah berikut:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+git remote add origin <URL-REPO-GITHUB-ANDA>
+git add .
+git commit -m "feat: prepare scitech web for github"
+git branch -M main
+git push -u origin main
+```

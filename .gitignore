@@ -39,3 +39,22 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# private mentor photos
+src/app/assets/private-mentors/
+src/app/assets/Adelia Dheanty*.jpeg
+src/app/assets/Adhelia Dheanty*.jpeg
+src/app/assets/Husni Teja Sukmana.jpg
+src/app/assets/Khair Fadhillah.jpeg
+src/app/assets/Muhammad Alif Ferdyansyah.jpeg
+src/app/assets/Muhammad Irfan Ali*.jpeg
+src/app/assets/Muhammad Rayhan.jpeg
+src/app/assets/Muhammad Zhafran Athofani.jpeg
+src/app/assets/Muslim Haq.jpeg
+src/app/assets/Mutiara.jpeg
+src/app/assets/Nenny Anggraini.jpg
+src/app/assets/Rian Yuliawan.jpeg
+src/app/assets/Risqi Ananda Jayanti*.jpeg
+src/app/assets/Shabira Zhillan Zhalila.jpeg
+src/app/assets/Zalfa Syawlia Hediatami.jpeg
+src/app/assets/Zuhdan Kahfi.jpeg
